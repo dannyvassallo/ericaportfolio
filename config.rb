@@ -1,3 +1,4 @@
+activate :php
 ###
 # Compass
 ###
@@ -41,17 +42,17 @@
 # end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
 
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
+
+set :fonts_dir,  'fonts-folder'
+
+activate :relative_assets
+
 
 # Build-specific configuration
 configure :build do

@@ -3,19 +3,59 @@
   <head>
     <meta charset="utf-8">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
-
+    <title>ELP Designs</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
     <%= stylesheet_link_tag "all" %>
+    <%= javascript_include_tag  "modernizr" %>
   </head>
 
-  <body class="<%= page_classes %>">
-    <%= partial "partials/navbar" %>
-    <%= partial "partials/header" %>
-    <%= yield %>
-    <%= javascript_include_tag  "all" %>
+  <body data-spy="scroll" data-target="#main-nav" data-offset="200" class="<%= page_classes %>">
+
+    <!--=== PAGE PRELOADER ===-->
+    <div id="page-loader"><span class="page-loader-gif"></span></div>
+
+
+
+    <!-- The sections  -->
+
+      <!-- The navbar  -->
+      <%= partial "partials/nav" %>
+      <!-- header edit in index.html.erb-->
+      <%= yield %>
+      <!-- services -->
+      <%= partial "partials/services" %>
+      <!-- about  -->
+      <%= partial "partials/about" %>
+      <!-- skills  -->
+      <%= partial "partials/skills" %>
+      <!-- portfolio -->
+      <%= partial "partials/portfolio" %>
+      <!-- contact -->
+      <%= partial "partials/contact" %>
+      <!-- footer -->
+      <%= partial "partials/footer" %>
+
+    <!-- end sections -->
+
+    <%= javascript_include_tag "all" %>
+    <%= javascript_include_tag "jquery.scrollto.js" %>
+    <%= javascript_include_tag "jquery.flexslider.min.js" %>
+    <%= javascript_include_tag "twitterFetcher_v10_min.js" %>
+    <%= javascript_include_tag "jquery.masonry.min.js" %>
+    <%= javascript_include_tag "waypoints.min.js" %>
+    <%= javascript_include_tag "jquery.easypiechart.min.js" %>
+    <%= javascript_include_tag "jquery.backstretch.min.js" %>
+    <%= javascript_include_tag "contact.js" %>
+    <%= javascript_include_tag "designr.js" %>
   </body>
 </html>
