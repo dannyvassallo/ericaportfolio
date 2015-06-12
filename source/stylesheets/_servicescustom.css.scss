@@ -1,0 +1,25 @@
+.icon-wrap{
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #8aaad9;
+  color: #fff;
+  border-radius: 50%;
+  behavior: url(PIE.htc);
+  border: 8px solid #fff;
+  line-height: 135px;
+  font-size: 80px;
+  position: relative;
+}
+.icon-wrap:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  left: -16px;
+  right: -16px;
+  bottom: -16px;
+  border: 10px solid #8aaad9;
+  border-radius: 50%;
+}
