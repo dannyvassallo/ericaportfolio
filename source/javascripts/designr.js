@@ -220,9 +220,9 @@ $(document).ready(function() {
 	/*============================================
 	Backstretch Images
 	==============================================*/
-	$.backstretch('images/header-bg.jpg');
+	// $.backstretch('images/header-bg.jpg');
 
-	$('body').append('<img class="preload-image" src="images/contact-bg.jpg" style="display:none;"/>');
+	$('body').append('<img class="preload-image" src="https://s3.amazonaws.com/ericaparker/contact-bg.jpg" style="display:none;"/>');
 
 	$('#about').waypoint(function(direction){
 
@@ -231,9 +231,7 @@ $(document).ready(function() {
 		$('.backstretch').remove();
 
 		if (direction=='down'){
-			$.backstretch('images/contact-bg.jpg');
-		}else{
-			$.backstretch('images/header-bg.jpg');
+			$.backstretch('https://s3.amazonaws.com/ericaparker/contact-bg.jpg');
 		}
 	});
 

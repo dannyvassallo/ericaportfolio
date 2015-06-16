@@ -30,10 +30,12 @@ Start Middleman server:
 ```
 middleman -s
 ```
+Start it on Vagrant:
+```
+bundle exec middleman s -p 3000 --force-polling --verbose
+```
 
 and that's it. If you're on windows follow the instructions on my rails-middleman-vagrant repository [here](https://github.com/dannyvassallo/rails-middleman-vagrant).
-
-This version is being a pain so everytime you make a change to the partials or layout file you need to stop and start the server. Hit "ctrl + c" on mac or pc to kill it. I'll try and fix that.
 
 ###Step 4
 

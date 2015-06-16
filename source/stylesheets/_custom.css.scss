@@ -5,3 +5,147 @@
 .modal-body h1{
   margin: 0 0 24px;
 }
+// Erica CSS Begin
+
+.icon-wrap:before {
+	border: 10px solid #547077;
+}
+.icon-wrap {
+	background-color: #547077;
+}
+.navbar-brand > img {
+  display: inline;
+  max-width: 60px;
+  margin-right: 15px;
+}
+.lead {
+	font-size: 21px!important;
+	line-height: 32px!important;
+	margin-bottom: 13px!important;
+}
+#about p {
+	font-size: 15px;
+	line-height: 26px;
+}
+.jumbotron .message-box{
+	background: rgba(255, 255, 255, 0) !important;
+	background-color: transparent !important;
+	text-shadow: 1px 2px 2px #000 !important;
+	color: #fff !important,
+}
+.hider {
+	display: none;
+}
+.front-end-text{
+	height: 240px;
+	p{
+		margin-top: -14px !important;
+		line-height: 60px;
+	}
+	.front-end{
+		font-size: 89px;
+	}
+	.web-dev{
+		margin-top: -40px;
+		font-size: 63px;
+		display: block;
+	}	
+}
+.cat span{
+	display: block;
+}
+@media (max-width: 1200px){
+	.front-end-text{
+		height: 184px;
+		p{
+			margin-top: 13px;
+			line-height: 60px;
+		}
+		.front-end{
+			font-size: 60px;
+		}
+		.web-dev{
+			margin-top: -30px;
+			font-size: 41px;
+			display: block;
+		}	
+	}
+}
+@media (max-width: 992px){
+	.name{display:none;}
+}
+@media (max-width: 768px){
+	.front-end-text{
+		height: 82px;
+		.front-end{
+			font-size: 40px;
+		}
+		.web-dev{
+			font-size: 40px;			
+		}			
+	}
+	.cat span{
+		display: inline;
+	}
+}
+@media (max-width: 742px){
+	.front-end-text{
+		height: 144px;
+		.front-end{
+			font-size: 60px;
+		}
+		.web-dev{
+			margin-top: 1px;
+			font-size: 40px;			
+		}			
+	}
+	.cat span{
+		display: block;
+	}
+}
+@media (max-width: 480px){
+	.front-end-text{
+		height: 96px;
+		.front-end{
+			font-size: 38px;
+		}
+		.web-dev{
+			margin-top: -9px;
+			font-size: 26px;			
+		}			
+	}
+	.cat span{
+		display: block;
+	}
+}
+@media (max-width: 364px){
+	#projects-container .project-item {
+		left: -10px !important;
+	}
+}
+@media (max-width: 355px){
+	#projects-container .project-item {
+		left: -20px !important;
+	}
+}
+.flexslider{
+	box-shadow: none !important;
+}
+#home{
+	background-image: url(https://s3.amazonaws.com/ericaparker/header-bg.jpg);
+	background-size: cover;
+	background-position: center center !important;
+	background-attachment: fixed;	
+}
+.project-image{
+	padding: 10px;
+}
+.project-item .hover-mask{
+	width: auto;
+	height: auto;
+	right: 0;
+	bottom: 0;
+}
+#projects-container{
+	margin: 13px auto;	
+}

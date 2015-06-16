@@ -9,6 +9,16 @@ function hoverAnimation(element){
    });
 }
 
+
 $(function(){
-  hoverAnimation('.icon-hover')
+	hoverAnimation('.icon-hover');
+	$('#project-modal').on('shown.bs.modal', function () {
+   		var el = $('.modal-content .btn.btn-theme');
+   		var link = el.attr('href');
+		if (link == ""){			
+			$(el).hide();
+		} else{
+			$(el).show();
+		}
+	});
 });
