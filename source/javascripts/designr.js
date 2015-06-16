@@ -220,7 +220,7 @@ $(document).ready(function() {
 	/*============================================
 	Backstretch Images
 	==============================================*/
-	$.backstretch('images/header-bg.jpg');
+	// $.backstretch('images/header-bg.jpg');
 
 	$('body').append('<img class="preload-image" src="images/contact-bg.jpg" style="display:none;"/>');
 
@@ -232,8 +232,6 @@ $(document).ready(function() {
 
 		if (direction=='down'){
 			$.backstretch('images/contact-bg.jpg');
-		}else{
-			$.backstretch('images/header-bg.jpg');
 		}
 	});
 
