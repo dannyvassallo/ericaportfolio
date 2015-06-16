@@ -19,6 +19,8 @@ $(function(){
 			$(el).hide();
 		} else{
 			$(el).show();
+			$(el).attr('target', '_blank');
+
 		}
 	});
 });
