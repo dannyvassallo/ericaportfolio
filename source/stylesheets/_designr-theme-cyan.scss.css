@@ -14,7 +14,7 @@
 	text-indent: 200%;
 	white-space: nowrap;
 	overflow: hidden;
-    background: url("../images/logo.png");
+    background: url("https://s3.amazonaws.com/ericaparker/logo.png");
 }
 
 #main-nav a.ir-logo span{
@@ -132,7 +132,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #637187;
+  color: #547077;
   text-decoration: none;
 }
 
@@ -174,7 +174,7 @@ body {
 .btn-theme:hover{
 	cursor:pointer;
 	color:#fff;
-	background-color:#9fb8e0;
+	background-color:#547077;
 }
 
 .btn-theme:active,
@@ -612,7 +612,7 @@ header.jumbotron{
 
 #skills .skills h2 {
     margin:0 0 80px;
-    color:#637187;
+    color:#547077;
     font-size:24px;
     font-weight:300;
 }
@@ -663,7 +663,7 @@ header.jumbotron{
     font-size:24px;
     line-height:24px;
     font-weight:300;
-    color:#6a6a6a;
+    color:#547077;
 }
 
 #filter-works ul li:last-child:after{
@@ -678,7 +678,7 @@ header.jumbotron{
     line-height:24px;
     font-weight:300;
     background:transparent;
-    color:#6a6a6a;
+    color:#547077;
     text-transform:uppercase;
     text-decoration:none;
 }
@@ -1312,7 +1312,7 @@ header.jumbotron{
 
 #main-footer ul.footer-nav li a:hover,
 #main-footer ul.footer-nav li a:active{
-    color:#9fb8e0;
+    color:#547077;
     text-decoration:none;
 }
 
